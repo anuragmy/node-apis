@@ -24,7 +24,7 @@ a. route: /api/news
 
 b. query params: region (optional) , uuid (optional by default, if providing, provide correct uuid)
 
-# Methods used in this repo to make API faster
+# Methods used in this repo to make imorove API performance
 
 1. Used fastify in place of express
 
