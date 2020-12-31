@@ -4,14 +4,19 @@ const fastify = require("fastify")({
     prettyPrint: true,
   },
 });
+
+
+
 const fastifyResponseCaching = require("fastify-response-caching");
 const fastifyCompress = require("fastify-compress");
 const fastifyCors = require("fastify-cors");
 require("dotenv").config();
 const port = process.env.PORT || 3001;
+require('./config');
 
 // routes
 const { getAnalysis, getNews } = require("./routes/yahoo");
+const { request } = require("express");
 
 // middlewares
 fastify.register(fastifyCors);
