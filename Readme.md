@@ -14,13 +14,13 @@ API to get data from Yahoo Finance API
 
 1. Analysis Api
 
-a) route: /api/analysis
+a) route: http://localhost:3001/api/analysis
 
 b) query params: region (optional) , symbol (optional by default, if providing, provide correct symbol)
 
 2. News Api
 
-a. route: /api/news
+a. route: http://localhost:3001/api/news
 
 b. query params: region (optional) , uuid (optional by default, if providing, provide correct uuid)
 
