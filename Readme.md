@@ -32,10 +32,8 @@ Article: https://medium.com/javascript-in-plain-english/fastify-express-benchmar
 
 2. Compression
 
-3. Cache Control in request header
+3. response-caching middleware
 
-4. response-caching middleware
+4. running express in production mode
 
-5. running express in production mode
-
-6. Increase Max Sockets (in config.js)
+5. Increase Max Sockets (in config.js)
