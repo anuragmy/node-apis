@@ -22,7 +22,6 @@ fastify.register(fastifyCompress, { global: true });
 
 // api
 fastify.register(getAnalysis, { prefix: "/api" });
-fastify.register(getNews, { prefix: "/api" });
 
 // server
 const start = async () => {
