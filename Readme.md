@@ -34,6 +34,6 @@ Article: https://medium.com/javascript-in-plain-english/fastify-express-benchmar
 
 3. response-caching middleware
 
-4. running express in production mode
+4. running Node in production mode
 
 5. Increase Max Sockets (in config.js)
