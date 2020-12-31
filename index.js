@@ -4,9 +4,6 @@ const fastify = require("fastify")({
     prettyPrint: true,
   },
 });
-
-
-
 const fastifyResponseCaching = require("fastify-response-caching");
 const fastifyCompress = require("fastify-compress");
 const fastifyCors = require("fastify-cors");
@@ -21,7 +18,7 @@ const { request } = require("express");
 // middlewares
 fastify.register(fastifyCors);
 fastify.register(fastifyResponseCaching);
-fastify.register(fastifyCompress, { global: false });
+fastify.register(fastifyCompress, { global: true });
 
 // api
 fastify.register(getAnalysis, { prefix: "/api" });
