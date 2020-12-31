@@ -13,7 +13,6 @@ require('./config');
 
 // routes
 const { getAnalysis, getNews } = require("./routes/yahoo");
-const { request } = require("express");
 
 // middlewares
 fastify.register(fastifyCors);
@@ -22,6 +21,7 @@ fastify.register(fastifyCompress, { global: true });
 
 // api
 fastify.register(getAnalysis, { prefix: "/api" });
+fastify.register(getNews, { prefix: "/api" });
 
 // server
 const start = async () => {
